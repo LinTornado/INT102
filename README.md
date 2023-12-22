@@ -14,7 +14,7 @@ This study investigates the domain of robotics, focusing on classifying time-ser
 
 (5)'SVM.py': This file is about the code that runs the Support Vector Machine model. 
 
-(6)'plot.py': 
+(6)'plot.py': This file is used to generate the images used in our report.
 
 (7)'main.py': This file is a summary of all the above functions. It can help us print out the performance of different models by entering different parameters. It can also help us print out the images used in the report.
 
@@ -24,71 +24,19 @@ This study investigates the domain of robotics, focusing on classifying time-ser
 
 Among them, (2), (3), (4), (5) contain their own cross-validation, hyperparameter search, model fitting and model evaluation.
 
+## Different functionalities
+(1) 
+
+(2) 
+
 
 ## Software implementation
+There are two ways to run 'main.py':
 
+(1) Use cmd or terminal in Pycharm to run the code. We can run the code by typing 'python main.py --data_file1 X_train.csv --data_file2 y_train.csv --experiment <>' in the dialog. <> should be replaced by 'logistic_regression', 'random_forest', 'gradient_boosting', 'svm' or 'all'. When <> is replaced by one of the first four parameters, the corresponding model will be run. When <> is replaced by 'all', all models will be run and images will appear.
 
-
-
-## Dependencies
-
-You'll need a working Python environment to run the code.
-The recommended way to set up your environment is through the
-[Anaconda Python distribution](https://www.anaconda.com/download/) which
-provides the `conda` package manager.
-Anaconda can be installed in your user directory and does not interfere with
-the system Python installation.
-The required dependencies are specified in the file `environment.yml`.
-
-We use `conda` virtual environments to manage the project dependencies in
-isolation.
-Thus, you can install our dependencies without causing conflicts with your
-setup (even with different Python versions).
-
-Run the following command in the repository folder (where `environment.yml`
-is located) to create a separate environment and install all required
-dependencies in it:
-
-    conda env create
-
+(2) Use Pycharm to run the code directly. We can click the 'Edit Parameters' button in the upper right corner of pycharm. Then we can enter the statement mentioned in (1) in the 'parameters' line of the 'main' file. The next step is to click 'apply' button. Finally, we need to run the 'main.py' and the corresponding results will come out.
 
 ## Reproducing the results
 
-Before running any code you must activate the conda environment:
 
-    source activate ENVIRONMENT_NAME
-
-or, if you're on Windows:
-
-    activate ENVIRONMENT_NAME
-
-This will enable the environment for your current terminal session.
-Any subsequent commands will use software that is installed in the environment.
-
-To build and test the software, produce all results and figures, and compile
-the manuscript PDF, run this in the top level of the repository:
-
-    make all
-
-If all goes well, the manuscript PDF will be placed in `manuscript/output`.
-
-You can also run individual steps in the process using the `Makefile`s from the
-`code` and `manuscript` folders. See the respective `README.md` files for
-instructions.
-
-Another way of exploring the code results is to execute the Jupyter notebooks
-individually.
-To do this, you must first start the notebook server by going into the
-repository top level and running:
-
-    jupyter notebook
-
-This will start the server and open your default web browser to the Jupyter
-interface. In the page, go into the `code/notebooks` folder and select the
-notebook that you wish to view/run.
-
-The notebook is divided into cells (some have text while other have code).
-Each cell can be executed using `Shift + Enter`.
-Executing text cells does nothing and executing code cells runs the code
-and produces it's output.
-To execute the whole notebook, run all cells in order.
