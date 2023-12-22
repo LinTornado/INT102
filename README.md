@@ -25,7 +25,8 @@ This study investigates the domain of robotics, focusing on classifying time-ser
 Among them, (2), (3), (4), (5) contain their own cross-validation, hyperparameter search, model fitting and model evaluation.
 
 ## Different functionalities of modules
-(1) 
+(1) 'data_preprocessing.py'
++ def import_and_preprocess_data：
 
 (2) 
 
