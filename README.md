@@ -24,7 +24,7 @@ This study investigates the domain of robotics, focusing on classifying time-ser
 
 Among them, (2), (3), (4), (5) contain their own cross-validation, hyperparameter search, model fitting and model evaluation.
 
-## Different functionalities
+## Different functionalities of modules
 (1) 
 
 (2) 
@@ -37,6 +37,7 @@ There are two ways to run 'main.py':
 
 (2) Use Pycharm to run the code directly. We can click the 'Edit Parameters' button in the upper right corner of pycharm. Then we can enter the statement mentioned in (1) in the 'parameters' line of the 'main' file. The next step is to click 'apply' button. Finally, we need to run the 'main.py' and the corresponding results will come out.
 
-## Reproducing the results
+## Expected behaviours
+If the <> is replaced by 'all', five images will be shown and saved to the directory path. Besides, the four models will show their best combination of hyperparameters and average f1 score on the validation set. Besides, their f1 score on the test set on the test set under the optimal combination of hyperparameters will be shown. What's more, the hyperparameter search and cross-validation processes of a part of model will be shown.
 
-
+For Logistic Regression, the running time will be about 1 minnutes 41 seconds. For Random Forest Classifier, the running time will be about 4 minnutes 19 seconds. For Gradient Boosting Classifier, the running time will be about 15 minnutes 47 seconds. For Support Vector Machine, the running time will be about 2.22 seconds.
