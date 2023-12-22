@@ -26,10 +26,27 @@ Among them, (2), (3), (4), (5) contain their own cross-validation, hyperparamete
 
 ## Different functionalities of modules
 (1) 'data_preprocessing.py'
-+ def import_and_preprocess_data：
++ def import_data：Import data.
++ def basic_standard_scaler: Standardize the data.
++ def preprocess_data: Preprocess data.
 
-(2) 
+(2) 'LogisticRegression.py'
++ def experiment_logistic_regression: Run a logistic regression experiment.
 
+(3)'RandomForestClassifier.py'
++ def experiment_random_forest: Run a Random Forest Classifier experiment.
+
+(4)'GradientBoostingClassifier.py'
++ def experiment_gradient_boosting: Run a Gradient Boosting Classifier experiment.
+
+(5)'SVM.py'
++ def experiment_svm: Run a SVM experiment.
+
+(6)'plot.py'
++ def main: Plot two images. 
+
+(7)'main.py'
++ def main: Process command line parameters, set hyperparameters and cross validation folds for experiments and run specific machine learning model experiments based on user selection.
 
 ## Software implementation
 There are two ways to run 'main.py':
@@ -39,6 +56,6 @@ There are two ways to run 'main.py':
 (2) Use Pycharm to run the code directly. We can click the 'Edit Parameters' button in the upper right corner of pycharm. Then we can enter the statement mentioned in (1) in the 'parameters' line of the 'main' file. The next step is to click 'apply' button. Finally, we need to run the 'main.py' and the corresponding results will come out.
 
 ## Expected behaviours
-If the <> is replaced by 'all', five images will be shown and saved to the directory path. Besides, the four models will show their best combination of hyperparameters and average f1 score on the validation set. Besides, their f1 score on the test set on the test set under the optimal combination of hyperparameters will be shown. What's more, the hyperparameter search and cross-validation processes of a part of model will be shown.
+If the <> is replaced by 'all', two images about dataset will be shown and saved to the directory path. Besides, the four models will show their best combination of hyperparameters and average f1 score on the validation set. Besides, their f1 score on the test set on the test set under the optimal combination of hyperparameters will be shown. What's more, the hyperparameter search and cross-validation processes of a part of model will be shown.
 
 For Logistic Regression, the running time will be about 1 minnutes 41 seconds. For Random Forest Classifier, the running time will be about 4 minnutes 19 seconds. For Gradient Boosting Classifier, the running time will be about 15 minnutes 47 seconds. For Support Vector Machine, the running time will be about 2.22 seconds.
